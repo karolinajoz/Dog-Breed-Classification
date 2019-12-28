@@ -29,7 +29,7 @@ Dog images were gathered from open to public Stanford Dogs Dataset and consisted
 
 > Aditya Khosla, Nityananda Jayadevaprakash, Bangpeng Yao and Li Fei-Fei. Novel dataset for Fine-Grained Image Categorization. First Workshop on Fine-Grained Visual Categorization (FGVC), IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2011.
 
-[Link to dataset] (http://vision.stanford.edu/aditya86/ImageNetDogs/)
+[Link to dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/)
 
 Dog characteristics were web scraped from PetFinder.com - website of company focused on supporting pet adoption in all North America.
 
@@ -39,24 +39,24 @@ Recommendations are based on cosine similarity of the dog characteristics and im
 **Jupyter notebooks summary**:
 
 1. Modeling-dog-breed-classification.ipynb - transfer learning, classification modeling, models ensemble
-2. Web-scraping_Dog-similarity.ipynb - web scraping using Selenium, image and characteristcs datasets merging, similarity calculations
+2. Web-scraping_Dog-similarity.ipynb - web scraping using Selenium, image and characteristics datasets merging, similarity calculations
 3. Dog recognition and recommendation app
 	- prediction.py + Prediction\_app\_notebook.ipynb - running in jupyter notebook
    - streamlit_script.py - running in Streamlit visualization tool
 
 ### Exploratory Data Analysis
 
-Dog images were gathered from open to public Stanford Dogs Dataset and consisted of 20580 pictures of 120 dog breeds. On the plot below you can see that distribution of images for all of the breeds was quite uniform.
+Dog images were gathered from open to public Stanford Dogs Dataset which consists of 20580 pictures of 120 dog breeds. On the plot below you can see that distribution of images for all of the breeds was quite uniform.
 
 ![Photos count](plots/count.png)
 
-The Maltese dog, Afgan Hound and Scottish deerhound had the most pictures available and Pekinese and Redbone were the least represented. Even though models were performing well in distinguishing them among other breeds.
+The Maltese dog, Afgan Hound and Scottish deerhound had the most pictures available and Pekinese and Redbone were the least represented. Even though, models were performing well in distinguishing them among other breeds.
 
 ![Photos count](plots/most_rep.png)
 
 ### Classification modeling
 
-In this project I am using ResNET-50 model with weights from imagenet dataset. ResNET-50 is a convolutional neural network model pre-trained on over million images. I will be using transfer learning to classify dog breeds based on the dog picture. I am removing last layer of the ResNet model and will be using the features from the previous layer for classification with other models (so called bottleneck features).
+In this project I used ResNET-50 model with weights from Imagenet dataset. ResNET-50 is a convolutional neural network model pre-trained on over million images. *Transfer learning* was used to classify dog breeds based on the dog picture - I removed last layer of the ResNET model and used the features from the previous layer (so called bottleneck features) for further classification using other models .
 
 Preprocessing the images was done using Keras built in functions to match the input for ResNET model. All images were normalized using caffe style - centralizing all values.
 
