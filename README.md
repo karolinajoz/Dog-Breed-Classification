@@ -15,15 +15,15 @@ Built an app for predicting dog breed based on a dog photo and recommendation sy
 
 ## Project description
 
-I am a dog person and always find myself petting all my neighbors' dogs. Have you ever wondered:
+Have you ever wondered:
 
-*What is the breed your neighbors’ dog?*
+*What is the breed of your neighbors’ dog?*
 
 *Would this dog be the right choice for you?*
 
 *What are the other similar dogs?*
 
-I was always wondering what breed are the dogs I am passing by on the street. To solve this problem, I created a recommender system that takes a photo of a dog, analyze it, desribes what are this dog characteristics and based on it recommend similar breeds. 
+I am a dog person and always find myself petting all my neighbors' dogs. I was always wondering what breed are the dogs I am passing by on the street. To solve this problem, I created a recommender system that takes a photo of a dog, analyze it, desribes what are this dog characteristics and based on it recommend similar breeds. 
 
 Dog images were gathered from open to public Stanford Dogs Dataset and consisted of 20580 pictures of 120 dog breeds.
 
